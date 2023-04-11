@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 ''' function that returns the list
-'''                                                                                                                                                                                                                                                                                                                                                             def lookup(obj):
-    attrs = dir(obj)
-    methods = [attr for attr in attrs if callable(getattr(obj, attr))]
-    return attrs + methods
+'''
+
+
+def lookup(obj):
+    ''' function: lookup()
+    Returns a list object
+    '''
+    return dir(obj)
